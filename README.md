@@ -5,7 +5,7 @@ The idea was to use Yelp database to understand correlations between local demog
 
 create_yelp.py: Yelp has  open dataset of businesses in 6 major cities in one huge json file. This script creates a db of these businesses, especially restaurants. I used sqlalchemy ORM to do the DB creation and a local Postgressql server was the DB. 
 
-create_census.py: The second goal was to retrieve census information about all the zipcodes that are present in the Yelp database using census API. I have written a SQL query to get all the unique zipcodes from the yelp database and looped over it to get my census information. A class was used to hold the information which was later jsonfied to prevent calls to API. 
+create_places.py: The second goal was to retrieve census information about all the zipcodes that are present in the Yelp database using census API. I have written a SQL query to get all the unique zipcodes from the yelp database and looped over it to get my census information. A class was used to hold the information which was later jsonfied to prevent calls to API. 
 
 script.py: This uses the DB and the demographic information JSON files to find the best matching zipcode and plots the distribution of different demographic features that are considered to match two locations. 
 
